@@ -1,19 +1,15 @@
                     <br class="clear">
                </div><!-- /#contents -->
-              
-<!-- Footer -->              
-               <div id="footer">
-              
-                    <?php dynamic_sidebar( 'footer-widget' ); ?>
-                   
-                    <p class="copy">
-                         &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
-                    </p>
 
-               </div><!-- /#footer -->
-          </div><!-- /#wrapper -->
-     </div><!-- /#page -->
+	</div><!-- /#wrapper -->
 
-<?php wp_footer(); ?>
+	<footer>
+		<?php dynamic_sidebar( 'footer-widget' ); ?>
+			<p id="copy">
+				&copy; <?php echo date('Y'); ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>.
+			</p>
+	</footer>
+	
+	<?php wp_footer(); ?>
 </body>
 </html>
